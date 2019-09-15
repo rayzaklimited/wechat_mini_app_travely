@@ -1,20 +1,84 @@
 <!--pages/product/product.wxml-->
 <view class="container">
+  <view class="list-section">
     <view class="products">
       <view class="block1"> 
-        <image  class="image" src="/assets/dubai.jpg"></image>
+          <image  class="image" src="/assets/dubai.jpg"></image>
       </view>
-      <view class="block2">
-        <view class="product_title">
-            <text>Abu Dhabi</text>
-            <text id="price">120$</text>
-        </view>
-        <view class="product_location">
-          <text>City cityyy</text>
-          <text id="review">* 4.5</text>
-        </view>
-        <text>lorem corumbale lorem corumbale lorem corum</text>
-      </view> 
+      <view style="flex: 2; flex-direction: column; padding: 10rpx;">
+          <view class="block2">
+                <view class="block2-1">
+                    <view >
+                        <text>Abu Dhabi</text>
+                    </view>
+                    <view>
+                        <text id="location">City cityyy</text>
+                    </view>
+                </view>
+                <view class="block2-2">
+                    <text id="price" >120$</text>
+                    <text id="location">* 4.5</text>
+                </view>
+            </view>
+            <view style="flex: 1; margin-left: 20rpx; ">
+                <text id="desc">lorem corumb ale lo rem corum bale lorem corum</text>
+            </view>
+
+      </view>
     </view>
-    
+
+     <view class="products">
+      <view class="block1"> 
+          <image  class="image" src="/assets/dubai.jpg"></image>
+      </view>
+      <view style="flex: 2; flex-direction: column; padding: 10rpx;">
+          <view class="block2">
+                <view class="block2-1">
+                    <view >
+                        <text>Abu Dhabi</text>
+                    </view>
+                    <view>
+                        <text id="location">City cityyy</text>
+                    </view>
+                </view>
+                <view class="block2-2">
+                    <text id="price" >120$</text>
+                    <text id="location">* 4.5</text>
+                </view>
+            </view>
+            <view style="flex: 1; margin-left: 20rpx; ">
+                <text id="desc">lorem corumb ale lo rem corum bale lorem corum</text>
+            </view>
+
+      </view>
+    </view>
+
+     <view class="products">
+      <view class="block1"> 
+          <image  class="image" src="/assets/dubai.jpg"></image>
+      </view>
+      <view style="flex: 2; flex-direction: column; padding: 10rpx;">
+          <view class="block2">
+                <view class="block2-1">
+                    <view >
+                        <text>Abu Dhabi</text>
+                    </view>
+                    <view>
+                        <text id="location">City cityyy</text>
+                    </view>
+                </view>
+                <view class="block2-2">
+                    <text id="price" >120$</text>
+                    <text id="location">* 4.5</text>
+                </view>
+            </view>
+            <view style="flex: 1; margin-left: 20rpx; ">
+                <text id="desc">lorem corumb ale lo rem corum bale lorem corum</text>
+            </view>
+
+      </view>
+    </view>
+  </view>
 </view>
+
+
