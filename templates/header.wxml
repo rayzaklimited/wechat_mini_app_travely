@@ -1,0 +1,8 @@
+<template name="Header">
+  <view class="header">
+    <image mode="aspectFill" src="../../images/logo.png"></image>
+    <view class="appdes">
+      分享有趣旅行,讲述奇闻趣事.
+    </view>
+  </view>
+</template>

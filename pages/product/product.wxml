@@ -1,0 +1,20 @@
+<!--pages/product/product.wxml-->
+<view class="container">
+    <view class="products">
+      <view class="block1"> 
+        <image  class="image" src="/assets/dubai.jpg"></image>
+      </view>
+      <view class="block2">
+        <view class="product_title">
+            <text>Abu Dhabi</text>
+            <text id="price">120$</text>
+        </view>
+        <view class="product_location">
+          <text>City cityyy</text>
+          <text id="review">* 4.5</text>
+        </view>
+        <text>lorem corumbale lorem corumbale lorem corum</text>
+      </view> 
+    </view>
+    
+</view>

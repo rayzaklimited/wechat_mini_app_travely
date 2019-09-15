@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="page__bd">
+  
+            <view class="swiper-container">
+              <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+                <block wx:for="{{banners}}" wx:key="id">
+                  <swiper-item>
+                    <image bindtap="tapBanner" data-id="{{item.businessId}}" src="/assets/bali.jpg" class="slide-image" width="750rpx" height="562.5rpx" />
+                  </swiper-item>
+                </block>
+              </swiper>
+              <view class="dots">
+                <block wx:for="{{banners}}" wx:key="unique">
+                  <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+                </block>
+              </view>
+            </view>
+            <view class="weui-loadmore weui-loadmore_line" wx:if="{{goodsRecommend.length > 0 && activeCategoryId == 0}}">
+              <view class="weui-loadmore__tips weui-loadmore__tips_in-line">爆品推荐</view>
+            </view>
+ 
+</view>
+</view>
+
