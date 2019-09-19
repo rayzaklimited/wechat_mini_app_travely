@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/product/product",
+    "pages/product-detail/product-detail",
     "pages/banner/banner"
   ],
   "window": {
@@ -24,6 +25,10 @@
       {
         "pagePath": "pages/banner/banner",
         "text": "banner"
+      },
+      {
+        "pagePath": "pages/product-detail/product-detail",
+        "text": "detail"
       }
     ]
   },

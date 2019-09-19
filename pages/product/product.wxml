@@ -1,83 +1,52 @@
 <!--pages/product/product.wxml-->
 <view class="container">
+
+  <view class="offer"> 
+      <image  class="image" src="/assets/dubai.jpg"></image>
+      <view style="display: flex; flex-direction: column; position: absolute;">
+            <view style="flex: 2;">
+                  <text >jkgkjgfjhfdg</text>
+             </view>
+             <view style="flex: 1;">
+                  <navigator class="navigator" url="../../redirect/redirect/redirect?title=redirect" 
+                  open-type="redirect">JUST-GO</navigator>
+             </view>
+      </view>
+      
+  </view>
+ 
   <view class="list-section">
-    <view class="products">
-      <view class="block1"> 
-          <image  class="image" src="/assets/dubai.jpg"></image>
-      </view>
-      <view style="flex: 2; flex-direction: column; padding: 10rpx;">
-          <view class="block2">
-                <view class="block2-1">
-                    <view >
-                        <text>Abu Dhabi</text>
+    <block wx:for="{{offers}}"  wx:key="key">
+        <view class="products">
+          <view class="block1"> 
+              <image  class="image" src="{{item.imgURL}}"></image>
+          </view>
+          <view style="flex: 2; flex-direction: column; padding: 10rpx;">
+              <view class="block2">
+                    <view class="block2-1">
+                        <view >
+                            <text>{{item.country}}</text>
+                        </view>
+                        <view>
+                            <text id="location">{{item.location}}</text>
+                        </view>
                     </view>
-                    <view>
-                        <text id="location">City cityyy</text>
-                    </view>
-                </view>
-                <view class="block2-2">
-                    <text id="price" >120$</text>
-                    <text id="location">* 4.5</text>
-                </view>
-            </view>
-            <view style="flex: 1; margin-left: 20rpx; ">
-                <text id="desc">lorem corumb ale lo rem corum bale lorem corum</text>
-            </view>
-
-      </view>
-    </view>
-
-     <view class="products">
-      <view class="block1"> 
-          <image  class="image" src="/assets/dubai.jpg"></image>
-      </view>
-      <view style="flex: 2; flex-direction: column; padding: 10rpx;">
-          <view class="block2">
-                <view class="block2-1">
-                    <view >
-                        <text>Abu Dhabi</text>
-                    </view>
-                    <view>
-                        <text id="location">City cityyy</text>
+                    <view class="block2-2">
+                        <view>
+                            <text id="price" >{{item.price}}$</text>  
+                        </view>
+                        <view>
+                            <i-icon type="collection_fill" size="18" color="#12e663"/>
+                            <text id="location">{{item.review}}</text>
+                        </view>
                     </view>
                 </view>
-                <view class="block2-2">
-                    <text id="price" >120$</text>
-                    <text id="location">* 4.5</text>
+                <view style="flex: 1; margin-left: 20rpx; ">
+                    <text id="desc">{{item.desc}}</text>
                 </view>
             </view>
-            <view style="flex: 1; margin-left: 20rpx; ">
-                <text id="desc">lorem corumb ale lo rem corum bale lorem corum</text>
-            </view>
-
-      </view>
-    </view>
-
-     <view class="products">
-      <view class="block1"> 
-          <image  class="image" src="/assets/dubai.jpg"></image>
-      </view>
-      <view style="flex: 2; flex-direction: column; padding: 10rpx;">
-          <view class="block2">
-                <view class="block2-1">
-                    <view >
-                        <text>Abu Dhabi</text>
-                    </view>
-                    <view>
-                        <text id="location">City cityyy</text>
-                    </view>
-                </view>
-                <view class="block2-2">
-                    <text id="price" >120$</text>
-                    <text id="location">* 4.5</text>
-                </view>
-            </view>
-            <view style="flex: 1; margin-left: 20rpx; ">
-                <text id="desc">lorem corumb ale lo rem corum bale lorem corum</text>
-            </view>
-
-      </view>
-    </view>
+          </view>
+    </block>
   </view>
 </view>
 

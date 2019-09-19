@@ -5,7 +5,28 @@ Page({
    * Page initial data
    */
   data: {
-    
+      offers: [{
+        country: 'Abu Dhabi',
+        location: "Al riadh ksahe",
+        desc: "lorem corumb ale lo rem corum bale lorem corum",
+        price: "120",
+        review: "4.5",
+        imgURL: "/assets/dubai.jpg"
+      }, {
+          country: 'Thailand',
+          location: "bankook city",
+          desc: "lorem corumb ale lo rem corum bale lorem corum",
+          price: "37",
+          imgURL: "/assets/bali.jpg",
+          review: "3.5"
+        }, {
+          country: 'Tunisia',
+          location: "tunis, babouika",
+          desc: "lorem corumb ale lo rem corum bale lorem corum",
+          price: "98.7",
+          imgURL: "/assets/thailand.jpg",
+          review: "5"
+        }]
   },
 
   /**

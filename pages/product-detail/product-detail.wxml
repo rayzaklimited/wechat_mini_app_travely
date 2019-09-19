@@ -1,0 +1,119 @@
+<!--pages/product/product.wxml-->
+ <view >
+    <view class="scroll-view-item_H">
+      <image style="width: 100%;" src="/assets/dubai.jpg">  
+        </image>
+    </view>
+  </view>
+<view style="border-bottom: 2rpx solid #ededed;">  
+  <i-tabs current="{{ current }}" color="#3277d8" bindchange="handleChange">
+      <i-tab key="tab1" title="Information">tab 1 hdhdh</i-tab>
+      <i-tab key="tab2" title="Tour Plan">tab2 hdhdhhd</i-tab>
+      <i-tab key="tab3" title="reviews"></i-tab>
+      <i-tab key="tab4" title="location"></i-tab>
+  </i-tabs>
+</view>
+<view class="tab-content">
+  <block wx-if="{{current == 'tab1'}}" >
+      <text>Description</text>
+      <view class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean 
+      massa. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+      pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. felis eu pede...</view>
+  </block>
+  <block wx-if="{{current == 'tab2'}}" >
+    tab 2 content
+  </block>
+  <block wx-if="{{current == 'tab3'}}" >
+    tab 3 content
+  </block>
+  <block wx-if="{{current == 'tab4'}}" >
+    tab 4 content
+  </block>
+</view>
+
+<view class="desc-tab">
+  <view class="item">
+      <i-icon type="activity" size="28" color="#80848f" />
+      <text>12.06.2019</text>
+  </view>
+  <view class="item">
+      <i-icon type="coordinates" size="28" color="#80848f"/>
+      <text>805km</text>
+  </view>
+  <view class="item">
+      <i-icon type="collection_fill" size="28" color="#12e663"/>
+      <text>4.5 Ratings</text>
+  </view>
+  <view class="item">
+      <i-icon type="like_fill" size="28" color="#eb4034"/>
+      <text>5.2k</text>
+  </view>
+</view >
+<view class="amenities-content">
+    <view class="title">
+        <text>Amenities</text>
+    </view>
+    <view class="amenities">
+        <image class="iconImg"  src="/assets/icon1.png"></image>
+        <image class="iconImg"  src="/assets/icon2.png"></image>
+        <image class="iconImg"  src="/assets/icon3.png"></image>
+        <image class="iconImg"  src="/assets/icon4.png"></image>
+        <image class="iconImg"  src="/assets/icon5.png"></image>
+        <image class="iconImg"  src="/assets/icon6.png"></image>
+    </view>
+</view>
+
+<view class="gallery-content">
+    <view class="title">
+        <text>Travelers Photo</text>
+    </view>
+    <view class="gallery">
+        <view class="block1">
+            <image class="img"  src="/assets/bali.jpg"></image>
+        </view>
+        <view class="block2">
+            <image class="img"  src="/assets/thailand.jpg"></image>
+            <image class="img"  src="/assets/dubai.jpg"></image>
+        </view>
+    </view>
+</view>
+
+<view class="future-tour">
+    <view class="title">
+        <text>Future Tour</text>
+    </view>
+    <view class="list-section">
+    <block wx:for="{{offers}}"  wx:key="key">
+        <view class="products">
+          <view class="block1"> 
+              <image  class="image" src="{{item.imgURL}}"></image>
+          </view>
+          <view style="flex: 2; flex-direction: column; padding: 10rpx;">
+              <view class="block2">
+                    <view class="block2-1">
+                        <view >
+                            <text>{{item.country}}</text>
+                        </view>
+                        <view>
+                            <text id="location">{{item.location}}</text>
+                        </view>
+                    </view>
+                    <view class="block2-2">
+                        <view>
+                            <text id="price" >{{item.price}}$</text>  
+                        </view>
+                        <view>
+                            <i-icon type="collection_fill" size="18" color="#12e663"/>
+                            <text id="location">{{item.review}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view style="flex: 1; margin-left: 20rpx; ">
+                    <text id="desc">{{item.desc}}</text>
+                </view>
+            </view>
+          </view>
+    </block>
+  </view>
+</view>
+

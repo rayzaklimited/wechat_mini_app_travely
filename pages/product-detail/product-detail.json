@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index",
+    "i-icon": "../../dist/icon/index",
+    "mp-gallery": "../../components/gallery/gallery"
+  }
+}

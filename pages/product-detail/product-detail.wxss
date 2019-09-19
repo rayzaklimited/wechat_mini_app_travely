@@ -1,0 +1,146 @@
+
+.img{
+  /* position: relative; */
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: start;
+  /* align-self: flex-start; */
+  text-justify: auto;
+}
+
+.tab-content {
+  margin: 20rpx;
+}
+.tab-content text{
+  font-weight: 500;
+}
+.tab-content .desc{
+  margin-top: 20rpx;
+  color: #a8b6c8;
+  font-size: 16px;
+}
+.desc-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2rpx solid #ededed;
+  border-bottom: 2rpx solid #ededed;
+}
+.desc-tab .item {
+  margin: 10rpx;
+  }
+.desc-tab .item text{
+  font-size: 16px;
+  color: #a8b6c8;
+}
+.amenities-content {
+  margin: 20rpx;
+}
+.amenities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.amenities .iconImg{
+  width: 115rpx;
+  height: 115rpx;
+}
+.amenities-content .title{
+  font-weight: 500;
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+}
+.gallery-content {
+  margin: 20rpx;
+}
+.gallery-content .title{
+  font-weight: 500;
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+}
+.gallery-content .gallery{
+  display: flex;
+}
+.gallery-content .gallery .block1{
+    flex:2;
+    padding-right: 5rpx;
+}
+.gallery-content .gallery .block1 .img{
+    width: 100%;
+    height: 500rpx;
+}
+.gallery-content .gallery .block2 .img{
+  
+    width: 100%;
+    height: 250rpx;
+}
+.gallery-content .gallery .block2{
+    flex:1;
+    flex-direction: column;
+    padding-left: 5rpx;
+    justify-content: space-between;
+}
+/* duplicate from product list */
+.future-tour {
+  margin: 20rpx;
+}
+.future-tour .title{
+  font-weight: 500;
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+}
+
+.list-section{}
+.products{
+  display: flex;
+  border: 2rpx solid #ededed;
+  border-radius: 12px;
+  margin-bottom: 20rpx;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+.block1{
+  flex: 1;
+}
+.block1 .image{
+  /* position: relative; */
+  flex:1;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.block2{
+  display: flex;
+  flex:2;
+  background-color: #fff;
+  margin-left: 20rpx;
+}
+.block2-1{
+  flex:2;
+  /* margin-left: 10rpx; */
+}
+.block2-2{
+  flex:1;
+  margin-right: 4rpx;
+  text-align: right;
+  
+}
+.block2 .block2-1 text{
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+#location{
+    font-size: 15pt;
+    font-weight: 500;
+    color: #a8b6c8;
+    margin-bottom: 15rpx;
+}
+#desc {
+  font-size: 12pt;
+  font-weight: normal;
+  color: #a8b6c8;
+  line-height: 1;
+}

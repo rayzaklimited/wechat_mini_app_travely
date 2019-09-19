@@ -2,95 +2,52 @@
 <view class="container">
   <view class="section section_gap">
       <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
-          <view id="green" class="scroll-block-item_H">
-              <image class="img" src="/assets/dubai.jpg">
-                  <view class="img-title"> 
-                      <text>Australia </text>
-                  </view>
-                  <text id="city">Sydeney</text>
-                  <view class="img-desc"> 
-                      <text>4.5 (340)</text>
-                  </view>
-                </image>
-          </view>
-          <view id="red"  class="scroll-block-item_H">
-              <image class="img" src="/assets/thailand.jpg">
-                  <view class="img-title"> 
-                      <text>thailand </text>
-                  </view>
-                  <text id="city":>bankok</text>
-                  <view class="img-desc"> 
-                      <text>4.5 (340)</text>
-                  </view>
+        <block wx:for="{{newest}}"  wx:key="key">
+          <view id="key" class="scroll-block-item_H">
+            <image class="img" src="{{item.imgURL}}">
+                <view class="img-title"> 
+                    <text>{{item.country}} </text>
+                </view>
+                <text id="city">{{item.location}}</text>
+                <view class="img-desc"> 
+                    <text>{{item.review}} {{item.reviewnb}}</text>
+                </view>
               </image>
           </view>
-          <view id="yellow" class="scroll-block-item_H">
-              <image class="img" src="/assets/bali.jpg">
-                  <view class="img-title"> 
-                      <text>Indonisia </text>
-                  </view>
-                  <text id="city":>Bali</text>
-                  <view class="img-desc"> 
-                      <text>4.5 (340)</text>
-                  </view>
-              </image>
-          </view>
+        </block>
       </scroll-view>
   </view>
 
-  <view>
-      <!-- <text id="big-title">Where do you want to go</text> -->
   <view class="section section_gap">
-        <view class="section__title">Where do you want to go</view>
-        <text id="section-title">Rocomanded</text>
+      <view class="section__title">Where do you want to go</view>
+      <text id="section-title">Rocomanded</text>
         <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
-            <view id="green" class="scroll-view-item_H ">
-              <image class="img" src="/assets/dubai.jpg">
-                <text>Australia </text>
-                <text style="margin-left: 75%;">4.5</text>
-              </image>
-              <text>Sydeney</text>
-            </view>
-            <view id="red"  class="scroll-view-item_H">
-              <image class="img" src="/assets/thailand.jpg">
-                <text>thailand </text>
-              </image>
-              <text>thailand</text>
-            </view>
-            <view id="yellow" class="scroll-view-item_H ">
-                <image class="img" src="/assets/bali.jpg">
-                <text>bali </text>
+            <block wx:for="{{newest}}"  wx:key="key">
+              <view id="key" class="scroll-view-item_H ">
+                <image class="img" src="{{item.imgURL}}">
+                  <text>{{item.country}} </text>
+                  <text style="margin-left: 75%;">{{item.review}}</text>
                 </image>
-                <text>bali</text>
-            </view>
-            <!-- <view id="blue" class="scroll-view-item_H"></view> -->
+                <text>{{item.location}}</text>
+              </view>
+            </block>
         </scroll-view>
-    </view>
-
-    <view class="section section_gap">
-        <text id="section-title">Best Tour</text>
-        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
-            <view id="green" class="scroll-view-item_H ">
-              <image class="img" src="/assets/dubai.jpg">
-                <text>Australia </text>
-              </image>
-              <text>Sydeney</text>
-            </view>
-            <view id="red"  class="scroll-view-item_H">
-              <image class="img" src="/assets/thailand.jpg">
-                <text>thailand </text>
-              </image>
-              <text>thailand</text>
-            </view>
-            <view id="yellow" class="scroll-view-item_H ">
-                <image class="img" src="/assets/bali.jpg">
-                <text>bali </text>
-                </image>
-                <text>bali</text>
-            </view>
-            <!-- <view id="blue" class="scroll-view-item_H"></view> -->
-        </scroll-view>
-    </view>
   </view>
+
+  <view class="section section_gap">
+      <text id="section-title">Best Tour</text>
+      <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+          <block wx:for="{{newest}}"  wx:key="key">
+          <view id="key" class="scroll-view-item_H ">
+            <image class="img" src="{{item.imgURL}}">
+              <text>{{item.country}} </text>
+              <text style="margin-left: 75%;">{{item.review}}</text>
+            </image>
+            <text>{{item.location}}</text>
+          </view>
+        </block>
+          <!-- <view id="blue" class="scroll-view-item_H"></view> -->
+      </scroll-view>
+  </view>
+    
 </view>
-<!-- <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar> -->

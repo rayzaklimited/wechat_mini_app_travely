@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
 const app = getApp()
-var order = ['green', 'red', 'yellow', 'blue', 'green']
 Page({
   data: {
     motto: 'Hello World',
@@ -16,18 +15,25 @@ Page({
     background: '#fff',
     show: true,
     animated: false,
-    list: [{
-      text: "对话",
-      iconPath: "/example/images/tabbar_icon_chat_default.png",
-      selectedIconPath: "/example/images/tabbar_icon_chat_active.png",
-      pagePath: "./index",
-    },
-    {
-      text: "logs",
-      iconPath: "/example/images/tabbar_icon_setting_default.png",
-      selectedIconPath: "/example/images/tabbar_icon_setting_active.png",
-      pagePath: "./logs/logs",
-      badge: 'New'
+    
+    newest: [{
+      country: 'Abu Dhabi',
+      location: "Al riadh ksahe",
+      reviewnb: "120",
+      review: "4.5",
+      imgURL: '/assets/bali.jpg',
+    }, {
+      country: 'Thailand',
+      location: "bankook city",
+      reviewnb: "37",
+      review: "3.5",
+      imgURL: "/assets/dubai.jpg",
+    }, {
+      country: 'Tunisia',
+      location: "tunis, babouika",
+      reviewnb: "98",
+      review: "5",
+      imgURL: "/assets/thailand.jpg",
     }]
   },
   tabChange(e) {
