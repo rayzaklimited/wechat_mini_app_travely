@@ -1,4 +1,83 @@
 /**index.wxss**/
+.catogories{
+ display: flex;
+ flex-direction:  row;
+}
+.catogories .text{
+
+  font-weight: bold;
+  text-align: left;
+  text-decoration: darkblue;
+  flex: 1;  
+  margin-left:12px; 
+}
+
+.catogories .button{
+  /* padding-left: 190px; */
+  /* flex: 1; */
+  align-items: flex-end;
+}
+.catbuttons{
+  display: flex;
+  flex-direction: row;
+  
+
+
+
+}
+.catbuttons .button1{
+  background-color: #1e90ff;
+  font-size: 15px;
+}
+
+.catbuttons .button2{
+  background-color: #00FF00;
+  font-size: 15px;
+  
+}
+.catbuttons .button3{
+  background-color: #FF4500;
+  font-size: 15px;
+}
+.destination {
+  display: flex;
+  flex-direction: row;
+  padding-block-start: 50;
+  color: white;
+}
+
+.dest{
+  display: flex;
+  flex-direction: row;
+  white-space: wrap;
+  
+
+
+
+
+}
+.dest .vw{
+  flex: 1;
+  white-space: wrap;
+  font-size: medium;
+  text-align: center;
+
+}
+.dest .imag{
+  
+  border-radius:14px;
+  width: 90%; 
+  height: 150px;
+   
+
+}
+
+
+
+
+
+
+
 .userinfo {
   display: flex;
   flex-direction: column;
