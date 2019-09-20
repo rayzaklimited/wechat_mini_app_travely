@@ -1,18 +1,45 @@
 <!--pages/product/product.wxml-->
 <view class="container">
+  <view class="catogories">
+      <view class="text"><text>Categories</text></view>
+      <view class="button"><button style="background-color: transparent;" size="mini"><text>View All</text></button></view>
+  </view>
+  <view class="catbuttons">
+      <button  class="button1">Adventure</button>
+      <button  class="button2">Art & Culture</button>
+      <button  class="button3">Oceans</button>
+  </view>
+
+  <view class="dest-content">
+    <view class="catogories">
+        <view class="text"><text>Destination</text></view>
+        <view class="button"><button style="background-color: transparent;" size="mini"><text>View All</text></button></view>
+    </view>
+    <view class="dest">
+        <view  class="vw">
+          <image class="imag" src="/assets/beijing.jpeg"></image>
+          <view class="descity"><text>Beijing</text></view>
+          <view class="destcountry"><text>China</text></view>
+        </view>
+        <view  class="vw">
+          <image class="imag" src="/assets/dubai2.jpg"></image>
+          <view class="descity"><text>Dubai</text></view>
+          <view class="destcountry"><text>Emirate</text></view>
+        </view>
+    </view>
+  </view>
 
   <view class="offer"> 
       <image  class="image" src="/assets/dubai.jpg"></image>
-      <view style="display: flex; flex-direction: column; position: absolute;">
-            <view style="flex: 2;">
+      <view class="offer-content">
+            <view class="text">
                   <text >jkgkjgfjhfdg</text>
              </view>
-             <view style="flex: 1;">
+             <view class="button">
                   <navigator class="navigator" url="../../redirect/redirect/redirect?title=redirect" 
-                  open-type="redirect">JUST-GO</navigator>
-             </view>
+                  open-type="redirect">JUSTGO</navigator>
+              </view>      
       </view>
-      
   </view>
  
   <view class="list-section">

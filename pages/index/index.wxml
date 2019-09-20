@@ -1,48 +1,4 @@
 <!--index.wxml-->
-
-
-<view class="catogories">
-
- <view class="text"><text>Categories</text></view>
- <view class="button"><button size="mini"><text>View All</text></button></view>
- 
-</view>
-
-<view class="catbuttons">
-
-
- <button  class="button1">Adventure</button>
- <button  class="button2">Art & Culture</button>
- <button  class="button3">Oceans</button>
-
-</view>
-
-<view class="destination">" "</view>
-
-<view class="catogories">
-
- <view class="text"><text>Destination</text></view>
- <view class="button"><button size="mini"><text>View All</text></button></view>
- 
-</view>
-
-
-<view class="dest">
- 
- <view  class="vw">
-   <image class="imag" src="/assets/beijing.jpeg"></image><text>Beijing</text>
- </view>
-
- <view  class="vw">
-   <image class="imag" src="/assets/dubai2.jpg"></image><text>Dubai</text>
- </view>
-
-</view>
-
-
-
-
-
 <view class="container">
   <view class="section section_gap">
       <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
