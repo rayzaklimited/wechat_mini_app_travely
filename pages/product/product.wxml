@@ -30,17 +30,19 @@
   </view>
 
   <view class="offer"> 
-      <image  class="image" src="/assets/dubai.jpg"></image>
+        <image  class="image" src="/assets/dubai.jpg"></image>
+      
       <view class="offer-content">
             <view class="text">
-                  <text >jkgkjgfjhfdg</text>
+                  <text >Get 30% Off Your Next Tour Booking!</text>
              </view>
              <view class="button">
-                  <navigator class="navigator" url="../../redirect/redirect/redirect?title=redirect" 
-                  open-type="redirect">JUSTGO</navigator>
+                  <navigator class="navigator" url="/pages/product-detail/product-detail" 
+                  open-type="switchTab">JUST-GO</navigator>
               </view>      
       </view>
   </view>
+  
  
   <view class="list-section">
     <block wx:for="{{offers}}"  wx:key="key">
@@ -63,7 +65,7 @@
                             <text id="price" >{{item.price}}$</text>  
                         </view>
                         <view>
-                            <i-icon type="collection_fill" size="18" color="#12e663"/>
+                            <i-icon type="collection_fill" size="18" color="#02b21f"/>
                             <text id="location">{{item.review}}</text>
                         </view>
                     </view>
